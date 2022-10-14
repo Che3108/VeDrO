@@ -3,6 +3,12 @@
 from math import pi, cos, sin
 
 class Vector_2D(object):
+    '''
+    Вектор в двумерном пространстве.
+        start_point - начальная точка вектора
+        size - длина вектора
+        angle - угол между вектором и осью OX (0..360) 
+    '''
     def __init__(self,
                  start_point:tuple[int, int],
                  size:int,
