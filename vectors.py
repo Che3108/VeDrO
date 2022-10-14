@@ -86,7 +86,15 @@ class Vector_2D(object):
         self.__angle_grad, self.__angle_rad =  self.__grad2rad(angle)
 
     @property
-    def size(self):
+    def end_point(self) -> tuple[int, int]:
+        '''Координаты конечной точки вектора.'''
+        end_point = self.__calc_end_point(self.__start_point,
+                                          self.__size,
+                                          self.__angle_rad)
+        return end_point
+
+    @property
+    def size(self) -> int:
         '''Длина вектора (только чтение).'''
         return self.__size
 

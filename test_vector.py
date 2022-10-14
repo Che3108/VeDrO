@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 
 from vectors import Vector_2D
-import time
+import numpy as np
 
-t_start = time.time()
-v = Vector_2D((2,2), 30, 1000000000000)
-print(time.time() - t_start)
+A = Vector_2D((5,5), 10, 0)
+print(A.end_point)
