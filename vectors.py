@@ -87,7 +87,7 @@ class Vector_2D(object):
 
     @property
     def end_point(self) -> tuple[int, int]:
-        '''Координаты конечной точки вектора.'''
+        '''Координаты конечной точки вектора (только чтение).'''
         end_point = self.__calc_end_point(self.__start_point,
                                           self.__size,
                                           self.__angle_rad)
