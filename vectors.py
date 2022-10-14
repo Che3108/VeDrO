@@ -77,7 +77,7 @@ class Vector_2D(object):
         return points
 
     @property
-    def angle(self):
+    def angle(self) -> int:
         '''Угол между вектором и осью OX (0..360).'''
         return self.__angle_grad
 
