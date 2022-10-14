@@ -61,6 +61,10 @@ class Vector_2D(object):
             for x in range(x_min, x_max + 1):
                 y = a * x + b
                 points.append((x, int(round(y, 0))))
+            if a != 0:
+                for y in range(y_min, y_max + 1):
+                    x = (y - b) / a
+                    points.append((int(round(x, 0)), y))
         points = list(set(points))
         if x_min == x_1:
             sort_revers = False
