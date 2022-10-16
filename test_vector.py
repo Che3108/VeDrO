@@ -11,7 +11,6 @@ B = Vector_2D(A.end_point, l, 90)
 C = Vector_2D(B.end_point, l, 180)
 D = Vector_2D(C.end_point, l, 270)
 
-
 a = 15
 A.angle = a + 0
 B.angle = a + 90
