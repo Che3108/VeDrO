@@ -40,7 +40,7 @@ class Vector_2D(object):
         y_end = int(round(y_calc + y_start, 0))
         return (x_end, y_end)
 
-    def __calc_all_poilts(self,
+    def __calc_all_points(self,
                           start_point:tuple[int, int],
                           end_point:tuple[int, int]) -> tuple[tuple[int, int], ...]:
         '''Вычисление всех точек вектора.'''
@@ -77,7 +77,7 @@ class Vector_2D(object):
         end_point = self.__calc_end_point(self.__start_point,
                                           self.__size,
                                           self.__angle_rad)
-        points = self.__calc_all_poilts(self.__start_point, end_point)
+        points = self.__calc_all_points(self.__start_point, end_point)
         return points
 
     @property
